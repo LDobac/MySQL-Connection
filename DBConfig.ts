@@ -1,8 +1,8 @@
 let account = {
-    host : '13.124.248.226',
-    user : 'LeggoRoot',
-    password : '0!ow1L0864',
-    database : 'Leggo'
+    host : 'hostname',
+    user : 'username',
+    password : 'password',
+    database : 'DBname'
 };
 
 export default account;
