@@ -7,9 +7,6 @@
   "author": "LDobac <ljh34210329@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mysql": "^2.16.0"
-  },
-  "devDependencies": {
-    "@types/mysql": "^2.15.5"
+    "promise-mysql": "^3.3.1"
   }
 }
