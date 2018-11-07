@@ -1,0 +1,15 @@
+{
+  "name": "MySQL-Connection",
+  "version": "1.0.0",
+  "description": "mysql/mariadb connector",
+  "main": "index.js",
+  "repository": "https://github.com/LDobac/MySQL-Connection",
+  "author": "LDobac <ljh34210329@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.5"
+  }
+}

@@ -10,18 +10,19 @@ class SQLPool
         this.pool = mysql.createPool(DBConfig);
     }
 
-    GetConnection(callback : (connection : mysql.PoolConnection) => void)
+    async GetConnection()
     {
-        this.pool.getConnection((err : MysqlError, connection : mysql.PoolConnection) => {
-            if (err)
-            {
-                console.log('Mysql GetConnection Error!');
-                console.log(err.message);
-            }
+        try
+        {
+            return await this.pool.getConnection(async conn => conn);    
+        }
+        catch(err)
+        {
+            console.log('Mysql GetConnection Error!');
+            console.log(err.message);
 
-            callback(connection);
-            connection.release();
-        });
+            return false;
+        }
     }
 
     Close()
